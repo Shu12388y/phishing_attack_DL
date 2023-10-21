@@ -9,6 +9,7 @@ const {
   dashBoard,
   LoginForm,
   postData,
+  model
 } = require("../controller/controller");
 
 // define the home route
@@ -23,5 +24,5 @@ route.get("/linkedln", LoginForm);
 route.post("/data", postData);
 
 
-
+route.get("/analysis",model)
 module.exports = route;

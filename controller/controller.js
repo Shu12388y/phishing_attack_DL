@@ -29,10 +29,14 @@ const postData = async (req, res, next) => {
   }
 };
 
+const model = (req, res, next) => {
+  res.render("analysis.ejs");
+};
 module.exports = {
   homeController,
   hackPort,
   dashBoard,
   LoginForm,
   postData,
+  model,
 };
