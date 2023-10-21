@@ -40,7 +40,7 @@
     <%- include("includes/nav.ejs") %>
     <h1>DashBoard</h1>
     <div class="button">
-      <button>Send the Email</button>
+      <button onclick="log()">Send the Email</button>
     </div>
     <div class="info">
       Victim Information
@@ -48,4 +48,9 @@
       <div>Password: <%= password %></div>
     </div>
   </body>
+  <script>
+    async function log() {
+      console.log("clicked");
+    }
+  </script>
 </html>
