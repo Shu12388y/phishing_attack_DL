@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    h1 {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .element {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.3rem;
+      flex-direction: column;
+    }
+    .categories {
+      padding: 1.8rem;
+      width: 12rem;
+      background-color: lightblue;
+      font-size: 1.2rem;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: 300;
+      text-align: center;
+    }
+    .categories:hover {
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <%- include("includes/nav.ejs") %>
+    <h1>Send Phishing Mail</h1>
+    <div class="container">
+      <div class="element">
+        <a href="/hackboard"> <div class="categories">Linkedln</div></a>
+
+        <div class="categories">Instagram</div>
+        <div class="categories">Whatsapp</div>
+        <div class="categories">Facebook</div>
+      </div>
+    </div>
+  </body>
+</html>

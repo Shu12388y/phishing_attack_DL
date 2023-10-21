@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      h1 {
+        text-align: center;
+        margin-top: 4rem;
+        font-size: 3rem;
+        font-family: "Courier New", Courier, monospace;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      button {
+        padding: 1.3rem;
+        width: 12rem;
+        border: none;
+        outline: none;
+        background-color: lightblue;
+        font-size: 1.2rem;
+        font-family: "Courier New", Courier, monospace;
+      }
+      button:hover {
+        color: white;
+        border-radius: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include("./includes/nav.ejs") %>
+    <h1>Start Hacking</h1>
+    <div>
+      <a href="/hackingPort"><button>Get Started</button></a>
+    </div>
+  </body>
+</html>
