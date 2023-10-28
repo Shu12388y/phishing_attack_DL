@@ -41,10 +41,6 @@ const model = (req, res, next) => {
   res.render("analysis.ejs");
 };
 
-let user=""
-let subject=""
-let body=""
-
 const mailData=async(req,res,next)=>{
 
   let config = {
