@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>send Mail</h1>
+    <div>copy the Link</div>
+    <div>http://localhost:4000/linkedln</div>
+    <div>
+      <form action="/maildata" method="post">
+        <div>
+          <label for="to">To</label>
+          <input type="text" name="to" id="to" />
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" />
+        </div>
+        <div>
+          <label for="mail">Mail Body</label>
+          <input type="text" name="mailbody" id="mail" />
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
