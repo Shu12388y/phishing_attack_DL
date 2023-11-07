@@ -1,6 +1,7 @@
 const express = require("express");
+require('dotenv').config()
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT;
 const path = require("path");
 const homeRoute = require("./routes/homeRoute");
 
@@ -10,5 +11,5 @@ app.set("view engine", "ejs");
 app.set("views", "views");
 app.use(homeRoute);
 app.listen(PORT, () => {
-  console.log("server is on");
+  console.log("server is on",PORT);
 });

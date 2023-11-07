@@ -4,12 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      h1{
+        text-align: center;
+      }
+      input{
+        padding: 1rem;
+        width: 30rem;
+        height: 10rem;
+        margin-left: 30rem;
+      }
+      button{
+        display: block;
+        padding: 0.9rem;
+        width: 8rem;
+        background-color: lightblue;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.2rem;
+        border: none;
+        outline: none;
+        margin-top: 2rem;
+        margin-left: 40rem;
+      }
+      p{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 500;
+      }
+    </style>
   </head>
   <body>
     <%- include("includes/nav.ejs") %>
     <h1>Analystics</h1>
-
-    <h1>Sentiment Analysis Demo</h1>
     <p id="statusText"></p>
     <input
       id="inputText"
@@ -17,7 +44,7 @@
       value="Today is the happiest day and is full of rainbows!"
     />
     <button id="submitBtn">Submit</button>
-    <p>sentiment score:<span id="score"></span></p>
+    <p>Accuracy<span id="score"></span></p>
   </body>
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script> -->
